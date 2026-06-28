@@ -68,18 +68,17 @@ function toggleDetails(button) {
 }
 
 
-/* --- CHỨC NĂNG 3: HIỆU ỨNG HẠT RƠI BẰNG HÌNH ẢNH THẬT (2 GIÂY) --- */
 window.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('falling-container');
     if (!container) return;
 
     
     const nutImages = [
-        'ảnh sản phẩm/occho.png',
-        'ảnh sản phẩm/hanhnhan.png',
-        'ảnh sản phẩm/hatde.png',
-        'ảnh sản phẩm/yenmach.png',
-        'ảnh sản phẩm/decuoi.png'
+        'occho.png',
+        'hanhnhan.png',
+        'hatde.png',
+        'yenmach.png',
+        'decuoi.png'
     ]; 
     const totalNuts = 100; 
 
