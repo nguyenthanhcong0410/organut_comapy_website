@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quyen Website</title>
+    <link rel="stylesheet" href="quyen_style.css">
+    
+    
+</head>
+<body>
+    <div id="falling-container"></div>
+
+    <nav class="navbar">
+
+        <a href="#" class="menu-link">
+                <img src="ảnh sản phẩm/menu.png" alt="menu" class="menu-icon">
+        </a>
+
+        <div class="brand-text">
+            <p class="brand-title">Organut</p>
+            <p class="brand-subtitle">The Soul the Soil</p>
+        </div>
+
+        <div class="logo">
+            <a href="#">
+                <img src="ảnh sản phẩm/ảnh logo.png" alt="Quyen Web Logo" class="logo-img">
+            </a>
+        </div>
+        
+        <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">
+            <img src="ảnh sản phẩm/search_icon.png" alt="Search">
+        </button>
+    </div>
+
+        <div class="nav-icons">
+            
+            <a href="#" class="nav-icon-link">
+                <img src="ảnh sản phẩm/basket_icon.png" alt="basket" class="basket-icon">
+            </a>
+
+            
+        </div>
+        
+    </nav>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="ảnh sản phẩm/hà hô hốdemo.png" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="ảnh sản phẩm/hanhi.png" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="ảnh sản phẩm/ha2.png" alt="Banner 3">
+            </div>
+            <div class="slide">
+                <img src="ảnh sản phẩm/trithitbo.png" alt="Banner 4">
+            </div>
+            <div class="slide">
+                <img src="ảnh sản phẩm/hongocha.png" alt="Banner 5">
+            </div>
+            <div class="slide">
+                <img src="ảnh sản phẩm/chau.png" alt="Banner 6">
+            </div>
+            <div class="slide">
+                <img src="ảnh sản phẩm/hana.png" alt="Banner 7">
+            </div>
+        </div>
+
+        <button class="slider-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+        <button class="slider-btn next-btn" onclick="nextSlideButton()">&#10095;</button>
+    </div>
+
+    <section class="products-section">
+        <h2>FEATURED PRODUCTS</h2>
+        
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img class="product-img" src="ảnh sản phẩm/hộp sp.jpg" alt="product box">
+                <div class="product-title">Organut Granola Box</div>
+                <div class="product-price">129.000 VND</div>
+                
+                <button class="more-details-btn" onclick="toggleDetails(this)">More details</button>
+                
+                <div class="extra-details">
+                    <p><strong>Total weight:</strong> 350 grams</p>
+
+                    <p><strong>Ingredients:</strong> chestnuts, macadamia, cashews, almonds, oats, dried apples, dried dates, raisins, dried cranberries, dried mango, dried rose petals, rose flavor, chocolate flavor, matcha flavor, and chestnut flavor.</p>
+                    <p><strong>Usage & Storage:</strong> erve as a ready-to-eat snack, mix with yogurt, or use as a topping for baking. Store in a cool, dry place away from direct sunlight; ensure the package is tightly sealed after opening. Not suitable for individuals with allergies to any of the listed ingredients.</p>
+                    <p><strong>Nutritional Facts (per 100g):</strong> Energy 485 kcal, Total Fat 22g, Saturated Fat 3.5g, Cholesterol 0mg, Sodium 15mg, Total Carbohydrates 58g, Dietary Fiber 9g, Total Sugars 18g, Protein 14g, Iron 15% DV, Calcium 8% DV</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="ảnh sản phẩm/hộp sp thường.jpg" alt="productnormal">
+                <div class="product-title">Organut Original Granola Box</div>
+                <div class="product-price">119.000 VND</div>
+                
+                <button class="more-details-btn" onclick="toggleDetails(this)">More details</button>
+                
+                <div class="extra-details">
+                    <p><strong>Total weight:</strong> 350 grams</p>
+                    <p><strong>Ingredients:</strong> chestnuts, macadamia, cashews, almonds, oats, dried apples, dried dates, raisins, dried cranberries, dried mango, dried rose petals, rose flavor, chocolate flavor, matcha flavor, and chestnut flavor.</p>
+                    <p><strong>Usage & Storage:</strong> erve as a ready-to-eat snack, mix with yogurt, or use as a topping for baking. Store in a cool, dry place away from direct sunlight; ensure the package is tightly sealed after opening. Not suitable for individuals with allergies to any of the listed ingredients.</p>
+                    <p><strong>Nutritional Facts (per 100g):</strong> Energy 485 kcal, Total Fat 22g, Saturated Fat 3.5g, Cholesterol 0mg, Sodium 15mg, Total Carbohydrates 58g, Dietary Fiber 9g, Total Sugars 18g, Protein 14g, Iron 15% DV, Calcium 8% DV</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="ảnh sản phẩm/set sang trọng.jpg" alt="luxuryproduct">
+                <div class="product-title">Organut Luxury Granola Gift Set</div>
+                <div class="product-price">659.000 VND</div>
+                
+                <button class="more-details-btn" onclick="toggleDetails(this)">More details</button>
+                
+                <div class="extra-details">
+                    <p><strong>Total weight per jar:</strong> 500 grams</p>
+                    <p><strong>Ingredients:</strong> chestnuts, macadamia, cashews, almonds, oats, dried apples, dried dates, raisins, dried cranberries, dried mango, dried rose petals, rose flavor, chocolate flavor, matcha flavor, and chestnut flavor.</p>
+                    <p><strong>Usage & Storage:</strong> erve as a ready-to-eat snack, mix with yogurt, or use as a topping for baking. Store in a cool, dry place away from direct sunlight; ensure the package is tightly sealed after opening. Not suitable for individuals with allergies to any of the listed ingredients.</p>
+                    <p><strong>Nutritional Facts (per 100g):</strong> Energy 485 kcal, Total Fat 22g, Saturated Fat 3.5g, Cholesterol 0mg, Sodium 15mg, Total Carbohydrates 58g, Dietary Fiber 9g, Total Sugars 18g, Protein 14g, Iron 15% DV, Calcium 8% DV</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="ảnh sản phẩm/set thường.jpg" alt="normalset">
+                <div class="product-title">Organut Granola Gift Set</div>
+                <div class="product-price">579.000 VND</div>
+                
+                <button class="more-details-btn" onclick="toggleDetails(this)">More details</button>
+                
+                <div class="extra-details">
+                    <p><strong>Total weight per jar:</strong> 250 grams</p>
+                    <p><strong>Ingredients:</strong> chestnuts, macadamia, cashews, almonds, oats, dried apples, dried dates, raisins, dried cranberries, dried mango, dried rose petals, rose flavor, chocolate flavor, matcha flavor, and chestnut flavor.</p>
+                    <p><strong>Usage & Storage:</strong> erve as a ready-to-eat snack, mix with yogurt, or use as a topping for baking. Store in a cool, dry place away from direct sunlight; ensure the package is tightly sealed after opening. Not suitable for individuals with allergies to any of the listed ingredients.</p>
+                    <p><strong>Nutritional Facts (per 100g):</strong> Energy 485 kcal, Total Fat 22g, Saturated Fat 3.5g, Cholesterol 0mg, Sodium 15mg, Total Carbohydrates 58g, Dietary Fiber 9g, Total Sugars 18g, Protein 14g, Iron 15% DV, Calcium 8% DV</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="ảnh sản phẩm/hộp ăn liền.jpg" alt="foodbox">
+                <div class="product-title">Organut Ready-to-Eat Granola Cup</div>
+                <div class="product-price">15.000 VND</div>
+                
+                <button class="more-details-btn" onclick="toggleDetails(this)">More details</button>
+                
+                <div class="extra-details">
+                    <p><strong>Total weight per jar:</strong> 35 grams</p>
+                    <p><strong>Ingredients:</strong> chestnuts, macadamia, cashews, almonds, oats, dried apples, dried dates, raisins, dried cranberries, dried mango, dried rose petals, rose flavor, chocolate flavor, matcha flavor, and chestnut flavor.</p>
+                    <p><strong>Usage & Storage:</strong> erve as a ready-to-eat snack, mix with yogurt, or use as a topping for baking. Store in a cool, dry place away from direct sunlight; ensure the package is tightly sealed after opening. Not suitable for individuals with allergies to any of the listed ingredients.</p>
+                    <p><strong>Nutritional Facts (per 100g):</strong> Energy 485 kcal, Total Fat 22g, Saturated Fat 3.5g, Cholesterol 0mg, Sodium 15mg, Total Carbohydrates 58g, Dietary Fiber 9g, Total Sugars 18g, Protein 14g, Iron 15% DV, Calcium 8% DV</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="ảnh sản phẩm/gói dùng thử.jpg" alt="luxuryproduct">
+                <div class="product-title">Organut Granola (Trial pack)</div>
+                <div class="product-price">25.000 VND</div>
+                
+                <button class="more-details-btn" onclick="toggleDetails(this)">More details</button>
+                
+                <div class="extra-details">
+                    <p><strong>Total weight per box:</strong> 55 grams</p>
+                    <p><strong>Ingredients:</strong> chestnuts, macadamia, cashews, almonds, oats, dried apples, dried dates, raisins, dried cranberries, dried mango, dried rose petals, rose flavor, chocolate flavor, matcha flavor, and chestnut flavor.</p>
+                    <p><strong>Usage & Storage:</strong> erve as a ready-to-eat snack, mix with yogurt, or use as a topping for baking. Store in a cool, dry place away from direct sunlight; ensure the package is tightly sealed after opening. Not suitable for individuals with allergies to any of the listed ingredients.</p>
+                    <p><strong>Nutritional Facts (per 100g):</strong> Energy 485 kcal, Total Fat 22g, Saturated Fat 3.5g, Cholesterol 0mg, Sodium 15mg, Total Carbohydrates 58g, Dietary Fiber 9g, Total Sugars 18g, Protein 14g, Iron 15% DV, Calcium 8% DV</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-img" src="ảnh sản phẩm/túi tiết kiệm.jpg" alt="luxuryproduct">
+                <div class="product-title">Organut Granola (Economy pack)</div>
+                <div class="product-price">355.000 VND</div>
+                
+                <button class="more-details-btn" onclick="toggleDetails(this)">More details</button>
+                
+                <div class="extra-details">
+                    <p><strong>Total weight per box: </strong> 1000 grams</p>
+                    <p><strong>Ingredients:</strong> chestnuts, macadamia, cashews, almonds, oats, dried apples, dried dates, raisins, dried cranberries, dried mango, dried rose petals, rose flavor, chocolate flavor, matcha flavor, and chestnut flavor.</p>
+                    <p><strong>Usage & Storage:</strong> erve as a ready-to-eat snack, mix with yogurt, or use as a topping for baking. Store in a cool, dry place away from direct sunlight; ensure the package is tightly sealed after opening. Not suitable for individuals with allergies to any of the listed ingredients.</p>
+                    <p><strong>Nutritional Facts (per 100g):</strong> Energy 485 kcal, Total Fat 22g, Saturated Fat 3.5g, Cholesterol 0mg, Sodium 15mg, Total Carbohydrates 58g, Dietary Fiber 9g, Total Sugars 18g, Protein 14g, Iron 15% DV, Calcium 8% DV</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <img class="contact-icon" src="ảnh sản phẩm/contact_icon.png" alt="contact-icon">
+
+    <footer>
+        <p class="since">Since 2024</p>
+        <br>
+        <p>25 Vo Oanh, Binh Thanh District, Ho Chi Minh City.</p>
+    </footer>
+<script src="quyen_script.js"></script>
+</body>
+</html>
