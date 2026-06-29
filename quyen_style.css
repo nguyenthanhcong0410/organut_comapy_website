@@ -112,7 +112,7 @@ body {
     flex-direction: column; 
     justify-content: center;
     align-items: flex;  
-    margin-left: 250px; 
+    margin-left: 220px; 
     z-index: 10;
 }
 
@@ -434,88 +434,87 @@ footer {
 /* mobile only*/
 @media screen and (max-width: 768px) {
     
-    /* 1. Reset Navbar: Cho phép rớt hàng để chứa Search Bar, hạ chiều cao cố định xuống */
     .navbar {
         flex-wrap: wrap;       
         height: auto;          
         padding: 15px 15px;    
-        gap: 10px 0;           /* Tạo khoảng cách dòng giữa hàng icon và hàng ô tìm kiếm */
+        gap: 10px 0;       
     }
 
-    /* 2. Căn chỉnh chữ Organut & Slogan */
+    
     .brand-text {
         order: 2;
-        margin-left: 12px;     /* Khoảng cách vừa phải với Menu Icon phía trước */
-        align-items: flex-start; /* Giúp các dòng chữ thẳng hàng bên trái */
+        margin-left: 12px;     
+        align-items: flex-start; 
     }
     
     .brand-text .brand-title {
-        font-size: 16px;       /* Thu nhỏ chữ thương hiệu phù hợp màn hình nhỏ */
-        margin-left: 0;        /* Xóa bỏ khoảng lệch lề trái */
+        font-size: 16px;       
+        margin-left: 0;        
     }
     
     .brand-text .brand-subtitle {
         font-size: 11px;       
     }
 
-    /* 3. Đưa Logo tròn về trung tâm dòng chảy tự nhiên */
+    
     .logo {
-        position: static;      /* Huỷ bỏ định vị absolute xuyên thấu trên desktop */
-        transform: none;       /* Huỷ bỏ dịch chuyển tọa độ x */
+        position: static;      
+        transform: none;      
         left: auto;
         order: 3;
-        margin: 0 auto;        /* Đẩy tự động căn giữa khoảng không trống hàng đầu */
+        margin: 0 auto;        
     }
 
     .logo-img {
-        max-height: 45px;      /* Thu nhỏ đường kính logo */
+        max-height: 45px;      
     }
 
-    /* 4. TRIỆT TIÊU TOÀN BỘ MARGIN LỆCH CỦA CỤM ICON BÊN PHẢI */
+    
     .nav-icons {
         order: 4;            
-        margin-left: 0;        /* Xoá khoảng trống thừa */
-        gap: 12px;             /* Thu hẹp khoảng cách giữa các icon */
+        margin-left: 0;       
+        gap: 12px;            
     }
 
     .nav-icons .menu-link,
     .nav-icons .nav-icon-link:nth-child(2),
     .nav-icons .nav-icon-link:nth-child(3) {
-        margin-left: 0 !important;   /* Triệt tiêu triệt để các mốc -100px trên desktop */
-        margin-right: 0 !important;  /* Đưa icon về vị trí phân bổ chuẩn của Flexbox */
+        margin-left: 0 !important;   
+        margin-right: 0 !important;  
     }
 
     .menu-icon, .basket-icon {
-        width: 38px;           /* Thu gọn kích thước icon cho thanh thoát */
+        width: 38px;           
         height: 38px;
-        border: 2px solid transparent; /* Thu nhỏ độ dày viền ẩn đệm */
+        border: 2px solid transparent; 
     }
 
-    /* 5. TỐI ƯU THANH TÌM KIẾM CHIẾM TRỌN HÀNG DƯỚI */
+    
     .search-bar {
         order: 5;             
-        width: 100%;          /* Cho thanh ô tìm kiếm dài full 100% bề ngang điện thoại */
+        width: 100%;         
         max-width: 100%;
-        margin-left: 0;        /* Triệt tiêu hoàn toàn mốc 490px của desktop */
+        margin-left: 0;        
         margin-top: 5px;       
-        height: 42px;          /* Hạ độ cao hộp tìm kiếm vừa vặn ngón tay bấm */
+        height: 42px;         
     }
 
     .search-bar input {
         height: 100%;
         line-height: 42px;
         font-size: 14px;
-        padding: 0 45px 0 20px; /* Thu hẹp padding bên trong */
+        padding: 0 45px 0 20px;
     }
 
     .search-bar button img {
-        width: 32px;           /* Thu nhỏ kính lúp trong ô tìm kiếm */
+        width: 32px;          
         height: 32px;
     }
 
-    /* 6. BANNER BANNER SLIDER */
+    
     .slider-container {
-        height: 200px;         /* Hạ độ cao banner xuống tránh chiếm toàn bộ màn hình đầu */
+        height: 200px;         
     }
     
     .slider-btn {
@@ -524,9 +523,9 @@ footer {
         font-size: 14px;
     }
 
-    /* 7. LƯỚI SẢN PHẨM HIỂN THỊ 2 CỘT SONG SONG */
+    
     .products-grid {
-        grid-template-columns: repeat(2, 1fr); /* Ép hiển thị đúng 2 cột đều nhau trên Mobile */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 12px;             
         padding: 0 5px;        
     }
@@ -537,12 +536,12 @@ footer {
     }
 
     .product-img {
-        height: 130px;         /* Thu nhỏ ảnh bao bì sản phẩm */
+        height: 130px;         
         margin-bottom: 8px;
     }
 
     .product-title {
-        font-size: 13px;       /* Hạ cỡ chữ tiêu đề sản phẩm */
+        font-size: 13px;      
         line-height: 1.3;
         margin-bottom: 6px;
     }
@@ -553,14 +552,14 @@ footer {
     }
 
     .more-details-btn {
-        padding: 6px 14px;     /* Thu nhỏ nút xem thêm chi tiết */
+        padding: 6px 14px;    
         font-size: 11px;
     }
     
     .extra-details {
         font-size: 12px;
         padding: 0 5px !important; 
-        padding-bottom: 0 !important;       /* Chữ chi tiết mở rộng nhỏ gọn, dễ nhìn */
+        padding-bottom: 0 !important;       
     }
 
     .extra-details.open {
@@ -568,36 +567,36 @@ footer {
         margin-bottom: 10px;
     }
     
-    /* 8. ICON CONTACT FIXED */
+   
     .contact-icon {
         width: 48px;           
         height: 48px;
-        bottom: 20px;          /* Đặt gọn gàng sát mép góc dưới */
+        bottom: 20px;          
         right: 20px;
         border: 2px solid transparent;
     }
 
     .add-to-cart-btn {
-        width: 25px !important;     /* Nhỏ hơn hẳn mức 35px gốc */
+        width: 25px !important;    
         height: 25px !important;
-        font-size: 16px !important;  /* Dấu cộng vừa vặn */
-        bottom: 10px !important;     /* Căn cố định ở góc trái đáy ô */
+        font-size: 16px !important;  
+        bottom: 10px !important;     
         left: 10px !important;
     }
 }
 
 .buy-now-btn {
     width: 100%;
-    background-color: #68150A; /* Màu đỏ thẫm trùng với màu chữ thương hiệu của bạn */
+    background-color: #68150A; 
     color: #fff;
     border: none;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
-    border-radius: 20px; /* Bo tròn đều cho hợp phong cách web */
+    border-radius: 20px; 
     cursor: pointer;
-    margin-top: auto;    /* Đẩy nút xuống dưới */
-    margin-bottom: 8px;  /* Tạo khoảng cách vừa vặn với nút More details ngay dưới */
+    margin-top: auto;    
+    margin-bottom: 8px;  
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
@@ -609,11 +608,11 @@ footer {
     transform: scale(0.98);
 }
 
-/* 3. THÊM MỚI CSS CHO NÚT DẤU CỘNG (+) GÓC DƯỚI BÊN TRÁI */
+
 .add-to-cart-btn {
     position: absolute;
-    bottom: 15px;   /* Cách mép dưới ô sản phẩm */
-    left: 15px;     /* Cách mép trái ô sản phẩm */
+    bottom: 15px;   
+    left: 15px;     
     width: 35px;
     height: 35px;
     background-color: #f5f5f5;
@@ -621,7 +620,7 @@ footer {
     color: #333;
     font-size: 22px;
     font-weight: bold;
-    border-radius: 50%; /* Biến nút thành hình tròn */
+    border-radius: 50%; 
     cursor: pointer;
     display: flex;
     align-items: center;
