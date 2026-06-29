@@ -322,7 +322,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     height: auto;
@@ -367,7 +367,8 @@ body {
 }
 
 .more-details-btn:hover {
-    background-color: #ff4d4d;
+    background-color: #F9C98B;
+    color: #222
 }
    
 .extra-details {
@@ -383,6 +384,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     color: #666;
+    padding-bottom: 5px;
 }
         
 .extra-details.open {
@@ -390,6 +392,7 @@ body {
     padding: 15px 10px;
     margin-top: 15px;
     border-top: 1px solid #eee;
+    margin-bottom: 30px;
 }
 
 .contact-icon {
@@ -566,4 +569,57 @@ footer {
         right: 20px;
         border: 2px solid transparent;
     }
+}
+
+.buy-now-btn {
+    width: 100%;
+    background-color: #68150A; /* Màu đỏ thẫm trùng với màu chữ thương hiệu của bạn */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px; /* Bo tròn đều cho hợp phong cách web */
+    cursor: pointer;
+    margin-top: auto;    /* Đẩy nút xuống dưới */
+    margin-bottom: 8px;  /* Tạo khoảng cách vừa vặn với nút More details ngay dưới */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #9C2113; 
+}
+
+.buy-now-btn:active {
+    transform: scale(0.98);
+}
+
+/* 3. THÊM MỚI CSS CHO NÚT DẤU CỘNG (+) GÓC DƯỚI BÊN TRÁI */
+.add-to-cart-btn {
+    position: absolute;
+    bottom: 15px;   /* Cách mép dưới ô sản phẩm */
+    left: 15px;     /* Cách mép trái ô sản phẩm */
+    width: 35px;
+    height: 35px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%; /* Biến nút thành hình tròn */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding-bottom: 2px; 
+    transition: all 0.2s ease;
+    z-index: 5;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #30ad5e; 
+    color: #fff;
+    border-color: #30ad5e;
+    transform: scale(1.1);
 }
