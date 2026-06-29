@@ -112,7 +112,7 @@ body {
     flex-direction: column; 
     justify-content: center;
     align-items: flex;  
-    margin-left: 220px; 
+    margin-left: 120px; 
     z-index: 10;
 }
 
@@ -144,7 +144,7 @@ body {
     align-items: center;
     position: relative;
     
-    margin-left: 490px;      
+    margin-left: 580px;      
     flex-grow: 1; 
     max-width: 400px; 
     z-index: 10;
