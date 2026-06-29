@@ -558,7 +558,14 @@ footer {
     }
     
     .extra-details {
-        font-size: 12px;       /* Chữ chi tiết mở rộng nhỏ gọn, dễ nhìn */
+        font-size: 12px;
+        padding: 0 5px !important; 
+        padding-bottom: 0 !important;       /* Chữ chi tiết mở rộng nhỏ gọn, dễ nhìn */
+    }
+
+    .extra-details.open {
+        padding: 10px 5px !important;
+        margin-bottom: 10px;
     }
     
     /* 8. ICON CONTACT FIXED */
@@ -568,6 +575,14 @@ footer {
         bottom: 20px;          /* Đặt gọn gàng sát mép góc dưới */
         right: 20px;
         border: 2px solid transparent;
+    }
+
+    .add-to-cart-btn {
+        width: 25px !important;     /* Nhỏ hơn hẳn mức 35px gốc */
+        height: 25px !important;
+        font-size: 16px !important;  /* Dấu cộng vừa vặn */
+        bottom: 10px !important;     /* Căn cố định ở góc trái đáy ô */
+        left: 10px !important;
     }
 }
 
@@ -618,8 +633,8 @@ footer {
 }
 
 .add-to-cart-btn:hover {
-    background-color: #30ad5e; 
-    color: #fff;
-    border-color: #30ad5e;
+    background-color: #F28241; 
+    color: whitesmoke;
+    border-color: #F28241;
     transform: scale(1.1);
 }
