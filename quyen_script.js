@@ -18,7 +18,7 @@ function startAutoSlide() {
             index = 0; 
         }
         updateSliderPosition();
-    }, 3000);
+    }, 7000); // "7000" (7s) is the number of seconds the images will automatically slide. Can change "3000" => 3s, "5000" => 5s
 }
 
 function resetAutoSlide() {
